@@ -5,183 +5,588 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <div class="header__logo-wrapper">
-            <a href="/counter.js" class="header__logo">
-              <img 
-              src="./img/logo-header.svg" 
-              alt="" 
-              class="header__logo-image"
-              width="36" height="36" loading="lazy"
-              />
-              Hounter
-            </a>
+ 
+
+    <section class="about">
+      <div class="about__wrapper">
+        <div>
+          <div class="pre-title">
+            About Us
           </div>
-          <div class="header__wrapper">
-            <nav class="header__navigation">
-              <ul class="header__menu">
-                <li class="header__menu-item">
-                  <a href="#about" class="header__menu-link">About Us</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#article" class="header__menu-link">Article</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#property" class="header__menu-link header__menu-link--property">Property</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__action">
-              <button class="header__sign-up-button button">Sign Up</button>
+          <h2 class="about__title">
+            What about our industry Performance.
+          </h2>
+        </div>
+        <div>
+          <p class="about__p">
+            In today's world, we're bombarded with choices. From streaming services to meal kits, it can be overwhelming.
+          </p>
+          <div>
+            <div class="about__btn">
+              <button class="button">Read More</button>
+            </div>
+            <div class="about__description">
+              25+ Experience
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__info">
+          <h1 class="hero__title">Experts in construction</h1>
+          <p class="hero__description">The construction industry boasts a diverse range of experts, each playing
+          a crucial role in bringing a project from vision to reality. </p>
+          <button class="hero__button button">Explore More</button>
+        </div>
+        <div class="hero__human">
+          <img src="/images/hero-human.png" alt="">
+        </div>
+        <div class="hero__track">
+          <img src="/images/track.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
       <div class="container">
-        <div class="hero__container">
-          <div class="hero__intro">
-            <h2 class="hero__title">find the place to <br/>
-              live <span class="hero__title--transparent">your dreams</span><br/>
-              easily here
-            </h2>
-            <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
-            <div class="hero__search search">
-              <img class="search__pin" src="/img/icons/search-pin.svg" alt="">
-              <input class="search__input" type="search" placeholder="Search for the location you want!">
-              <button class="search__button button">Search</button>
+        <div class="services__wrapper">
+          <div class="services__content">
+            <div class="pre-title">Latest Services</div>
+            <h2 class="services__title">
+              The Best Services For You.
+            </h2> 
+            <p class="services__description">
+              In today's world, we're bombarded with choices. From streaming services to meal kits, it can be overwhelming to find the best option.
+            </p>
+            <div class="services__btn">
+              <button class="button-white">See All</button>
             </div>
-            <p class="hero__partnership">Our Partnership </p>
-            <ul class="partnership__list">
-              <li>
-                <a href="/" class="partnership__item">
-                  <img src="/img/traveloka.png" alt="traveloka">
-                </a>
-              </li>
-              <li>
-                <a href="/" class="partnership__item">
-                  <img src="/img/tiketcom.png" alt="tiketcom">
-                </a>
-              </li>
-              <li>
-                <a href="/" class="partnership__item">
-                  <img src="/img/airbnb.png" alt="airbnb">
-                </a>
-              </li>
-              <li>
-                <a href="/" class="partnership__item">
-                  <img src="/img/tripadvisor.png" alt="tripadvisor">
-                </a>
-              </li>
-            </ul>
           </div>
-          <div class="hero__slider slider">
-            <div class="slider__item">
-              <div class="slider__avatar slider__avatar--images">
-                <img src="/img/avatars/avatar-purple.png" alt="">
-                <img src="/img/avatars/avatar-green.png" alt="">
-                <img src="/img/avatars/avatar-orange.png" alt="">
-              </div>
-              <div class="slider__description">
-                <h3 class="description__title">1K+ People</h3>
-                <p class="description_note">Successfully Getting Home</p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__avatar">
-                <img src="/img/avatars/avatar-house-1.png" alt="">
+          
+
+          <div class="services-swiper">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
                 </div>
-              <div class="slider__description">
-                <h3 class="description__title">56 Houses</h3>
-                <p class="description_note">Sold Monthly</p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__avatar">
-                <img src="/img/avatars/avatar-dark-purple.png" alt="">
-              </div>
-              <div class="slider__description">
-                <h3 class="description__title">4K+</h3>
-                <p class="description_note">People Looking for New Homes</p>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
               </div>
             </div>
           </div>
+
+
+
         </div>
       </div>
     </section>
 
-    <section class="subscribe container">
-      <h2 class="subscribe__title">Subscribe For More Info <br/>
-      and update from Hounter</h2>
-      <div class="input__wrapper">
-        <img class="input__icon" src="img/subscribe_images/email_icon.png" />
-        <input placeholder="Your email here" class="input"/>
-        <button class="input__button">Subscribe Now</button>
-      </div>
-      
-      <img src="img/subscribe_images/1.png" alt="" class="subscribe__images--1">
-      <img src="img/subscribe_images/2.png" alt="" class="subscribe__images--2">
-      <img src="img/subscribe_images/3.png" alt="" class="subscribe__images--3">
-      <img src="img/subscribe_images/4.png" alt="" class="subscribe__images--4">
-      <img src="img/subscribe_images/5.png" alt="" class="subscribe__images--5">
-      <img src="img/subscribe_images/6.png" alt="" class="subscribe__images--6">
-      <img src="img/subscribe_images/7.png" alt="" class="subscribe__images--7">
-      <img src="img/subscribe_images/8.png" alt="" class="subscribe__images--8">
+    <!--отзывы слайдер-->
+    <section class="swiper__reviews container">
+      <p class="pre-title"> Our Testimonials</p>
+      <h2 class="jost-600">What our Clients Say About our work.</h2>
+      <div class="swiper mySwiper">
+       
+        <div class="swiper-wrapper swiper-wrapper__custom">
+          <div class="swiper-slide">
+            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
+            <div class="swiper__reviews--text--block">
+              <div>
+                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+              </div>
+              <div>
+                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+                <p class="jost-400">Architect Designer </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
+            <div class="swiper__reviews--text--block">
+              <div>
+                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+              </div>
+              <div>
+                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+                <p class="jost-400">Architect Designer </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
+            <div class="swiper__reviews--text--block">
+              <div>
+                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+              </div>
+              <div>
+                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+                <p class="jost-400">Architect Designer </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper__divider">
+          <img src="./images/reviews/line.png"/>
+        </div>
+        <div class="swiper-pagination"></div>
     </section>
-
-    <footer class="footer container">
-      <div class="footer__container">
-        <div class="footer__description">
-          <div class="footer__description__title">
-            <img src="img/logo-header.svg" alt="#">
-            <h3>Hounter</h3>
-          </div>
-          <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
-          <div class="footer__description__images">
-            <img src="img/icons/facebook-icon.png" alt="facebook-icon">
-            <img src="img/icons/twitter-icon.png" alt="twitter-icon">
-            <img src="img/icons/instagram-icon.png" alt="instagram-icon" class="instagram-icon">
-          </div>
-        </div>
-        <div class="footer__links">
-          <div class="footer__links__element">
-            <h3>Property</h3>
-            <ul>
-              <li><a href="#">House</a></li>
-              <li><a href="#">Apartment</a></li>
-              <li><a href="#">Villa</a></li>
-            </ul>
-          </div>
-          <div class="footer__links__element">
-            <h3>Article</h3>
-            <ul>
-              <li><a href="#">New article</a></li>
-              <li><a href="#">Popular Article</a></li>
-              <li><a href="#">Mast Read</a></li>
-              <li><a href="#">Tips & Tricks</a></li>
-            </ul>
-          </div>
-          <div class="footer__links__element">
-            <h3>Contact</h3>
-            <ul>
-              <li><a href="#">2464 Royal Ln. Mesa, New Jersey 45463</a></li>
-              <li><a href="#">(671) 555-0110</a></li>
-              <li><a href="#">info@hounter.com</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script type="module" src="/main.js"></script>
     
+    <section class="statistics">
+      <div class="statistics__container container">
+        <p class="statistics__caption pre-title">
+          Our Company Status
+        </p>
+          <h2 class="statistics__title">Trusted & Reliable</h2>
+          <div class="statistics__numbers numbers">
+            <div class="numbers__items">
+              <h3 class="numbers__title">110+</h3>
+              <p class="numbers__description">Completed Projects</p>
+            </div>
+            <div class="numbers__items">
+              <h3 class="numbers__title">280+</h3>
+              <p class="numbers__description">Team Member</p>
+            </div>
+            <div class="numbers__items">
+              <h3 class="numbers__title">100%+</h3>
+              <p class="numbers__description">Client Satisfaction</p>
+            </div>
+            <div class="numbers__items">
+              <h3 class="numbers__title">30+</h3>
+              <p class="numbers__description">Running Project</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="price-table">
+      <div class="price-table-container container">
+        <div class="price-table-title">
+          <h3><hr>Our Price table</h3>
+          <h2>Solutions For Price table</h2>
+        </div>
+
+        <div class="price-cards">
+          <div class="price-card">
+
+            <div class="triangle-wrapper">
+              <div class="rectangle"></div>
+            </div>
+            
+            <h2>$19.99 <span>/M</span></h2>
+            <div class="star-container">
+              <img src="/images/icons/Star.svg" alt="star">
+              <h3>Basic</h3>
+            </div>
+              <hr>
+                <div class="price-card__description">
+                  <ul>
+                    <li>24/7 Free Hotline Service</li>
+                    <li>Chat Support</li>
+                    <li>5 Months After Delivery Support</li>
+                    <li>Support with 8 Engineers</li>
+                    <li><span>Team Management</span></li>
+                    <li><span>Free Digital Marketing & Analysis</span></li>
+                  </ul>
+                </div>
+                <button class="button-white">Start Free Trial</button>
+          </div>
+
+          <div class="price-card">
+            <div class="special-card">
+              <div class="triangle-wrapper">
+                <div class="rectangle"></div>
+              </div>
+              <div class="special-div">Special</div>
+            </div>
+            <h2>$29.99 <span>/M</span></h2>
+            <div class="star-container">
+              <img src="/images/icons/Star.svg" alt="star">
+              <h3>Standart</h3>
+            </div>
+              <hr>
+                <div class="price-card__description">
+                  <ul>
+                    <li>24/7 Free Hotline Servic</li>
+                    <li>Chat Support</li>
+                    <li>5 Months After Delivery Support</li>
+                    <li>Support with 8 Engineers</li>
+                    <li>Team Management</li>
+                    <li>Free Digital Marketing & Analysis</li>
+                  </ul>
+                </div>
+                <button class="button-white">Start Free Trial</button>
+          </div>
+
+          <div class="price-card">
+            <div class="triangle-wrapper">
+              <div class="rectangle"></div>
+            </div>
+            <h2>$39.99 <span>/M</span></h2>
+            <div class="star-container">
+              <img src="/images/icons/Star.svg" alt="star">
+              <h3>Premium</h3>
+            </div>
+              <hr>
+                <div class="price-card__description">
+                  <ul>
+                    <li>24/7 Free Hotline Service</li>
+                    <li>Chat Support</li>
+                    <li>5 Months After Delivery Support</li>
+                    <li>Support with 8 Engineers</li>
+                    <li>Team Management</li>
+                    <li><span>Free Digital Marketing & Analysis</span></li>
+                  </ul>
+                </div>
+                <button class="button-white">Start Free Trial</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="insights">
+      <div class="insights__container container">
+        <p class="insights__caption pre-title">Our blog</p>
+        <h2 class="insights__title">Latest Insights and Updates</h2>
+        <div class="insights__modals modals">
+          <div class="modals__main main">
+            <div class="main__notes-container">
+              <div class="main__captions-wrapper captions-wrapper">
+                <p class="main__captions pre-title1">By Admin</p>
+                <p class="main__captions pre-title2">Building</p>
+              </div>
+              <h3 class="main__title">Stay up-to-date with the latest happenings.</h3>
+              <p class="main__description">Stay informed with our regular updates on significant events,
+                regulatory changes, and market trends. We cover a wide
+                range of topics, from new technological.</p>
+              <a href="/" class="modals__more">Read More</a>
+            </div>
+            <div class="main__image">
+              <img src="/images/builders/1.jpg" alt="Builder in headphones">
+            </div>
+          </div>
+          <div class="modals__item-wrapper">
+            <div class="modals__item">
+              <img src="/images/builders/2.jpg" alt="The builder is busy">
+              <div class="modals__captions-wrapper captions-wrapper">
+                <p class="modals__captions pre-title1">By Admin</p>
+                <p class="modals__captions pre-title2">Building</p>
+              </div>
+              <h3 class="modals__title">Practical advice and building step-by-step.</h3>
+              <a href="/" class="modals__more">Read More</a>
+            </div>
+            <div class="modals__item">
+              <div class="modals__image-announcement">
+                <img src="/images/builders/3.jpg" alt="The builder pours cement">
+              </div>
+              <div class="modals__captions-wrapper captions-wrapper">
+                <p class="modals__captions pre-title1">By Admin</p>
+                <p class="modals__captions pre-title2">Building</p>
+              </div>
+              <h3 class="modals__title">Insights perspective industry
+                from our team.</h3>
+              <a href="/" class="modals__more">Read More</a>
+            </div>
+            <div class="modals__item">
+              <img src="/images/builders/4.jpg" alt="The builders are discussing something">
+              <div class="modals__captions-wrapper captions-wrapper">
+                <p class="modals__captions pre-title1">By Admin</p>
+                <p class="modals__captions pre-title2">Building</p>
+              </div>
+              <h3 class="modals__title">most successful projects best
+                building case studies.</h3>
+              <a href="/" class="modals__more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="services__wrapper">
+          <div class="services__content">
+            <div class="pre-title">Latest Services</div>
+            <h2 class="services__title">
+              The Best Services For You.
+            </h2> 
+            <p class="services__description">
+              In today's world, we're bombarded with choices. From streaming services to meal kits, it can be overwhelming to find the best option.
+            </p>
+            <div class="services__btn">
+              <button class="button-white">See All</button>
+            </div>
+          </div>
+          
+          <div class="services-swiper">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="services-swiper-media">
+                    <div class="services-swiper-media__logo">
+                      <img 
+                        src="images/icons/building-icon.png" 
+                        alt="building icon">
+                    </div>
+                  </div>
+                  <div class="services-swiper-content"> 
+                    <div class="services-swiper-content__title">
+                      Building Contraction
+                    </div>
+                    <div class="services-swiper-content__description">
+                      This involves various stages like
+                      planning, design
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    <section class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.1628668151398!2d37.54747115750678!3d55.85984062123201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5379877ebfd71%3A0xb5030e9274a4c8a1!2z0JzQvtGC0L7RgdC10YDQstC40YEgIkR1c3QgUm9hZHMi!5e0!3m2!1sru!2sru!4v1727542777678!5m2!1sru!2sru" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+
+    <script>
+        let pagination__images = ['./images/reviews/1.jpg' , './images/reviews/2.jpg' , './images/reviews/3.jpg' ]
+        var swiper = new Swiper(".mySwiper", {
+          direction: "vertical",
+          pagination: {
+            el: ".swiper-pagination",
+            bulletActiveClass:'reviews__img-active',
+            bulletClass:'swiper__pagination--custom--bullet',
+            clickable: true,
+            renderBullet: function (index, className) {
+              return `<div class=' ${className}' style='background-image:url(${pagination__images[index]})'></div>`
+            },
+          },
+        });
+    </script>
   </body>
 </html>
